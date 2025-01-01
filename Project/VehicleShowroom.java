@@ -10,7 +10,7 @@ public class VehicleShowroom {
 
         System.out.println("--- Vehicle Showroom Management System ---");
 
-        // Register User
+       
         if (!loginSystem.isUserRegistered()) {
             System.out.println("No user found. Please set up your account.");
             System.out.print("Enter a username: ");
@@ -20,7 +20,7 @@ public class VehicleShowroom {
             loginSystem.registerUser(username, password);
         }
 
-        // Login
+       
         boolean loggedIn = false;
         System.out.println("\nPlease login to continue.");
 
@@ -38,7 +38,7 @@ public class VehicleShowroom {
             }
         }
 
-        // Main Menu
+     
         boolean running = true;
         while (running) {
             System.out.println("\n--- Main Menu ---");
@@ -48,13 +48,13 @@ public class VehicleShowroom {
             System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:
                     System.out.print("Enter vehicle ID: ");
                     int id = scanner.nextInt();
-                    scanner.nextLine(); // Consume newline
+                    scanner.nextLine(); 
                     System.out.print("Enter brand: ");
                     String brand = scanner.nextLine();
                     System.out.print("Enter model: ");
